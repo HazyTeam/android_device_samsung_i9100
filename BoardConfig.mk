@@ -25,7 +25,7 @@ TARGET_BOARD_INFO_FILE := device/samsung/i9100/board-info.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9100/bluetooth
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412-s2
 TARGET_KERNEL_CONFIG := hazy_i9100_defconfig
 
 # assert
