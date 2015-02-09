@@ -1,4 +1,5 @@
-#
+# Copyright (C) 2014 Hazy Project
+# Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,9 +13,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Specify phone tech before including full_phone
+# Inherit from our Hazy product configuration
 $(call inherit-product, vendor/hazy/configs/common.mk)
 
 # Release name
@@ -24,7 +24,7 @@ PRODUCT_RELEASE_NAME := GT-I9100
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
-# Inherit some common CM stuff.
+# Inherit some common Hazy stuff.
 $(call inherit-product, vendor/hazy/configs/common_full_phone.mk)
 
 # Inherit device configuration
