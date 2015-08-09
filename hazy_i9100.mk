@@ -14,12 +14,6 @@
 # limitations under the License.
 #
 
-# Inherit Hazy GSM telephony parts
-$(call inherit-product, vendor/hazy/configs/gsm.mk)
-
-# Inherit from our Hazy product configuration
-$(call inherit-product, vendor/hazy/configs/common.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := GT-I9100
 
@@ -27,8 +21,8 @@ PRODUCT_RELEASE_NAME := GT-I9100
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
-# Inherit from our Hazy vendor product
-$(call inherit-product, vendor/hazy/device-partial.mk)
+# Inherit some common Hazy stuff.
+$(call inherit-product, vendor/hazy/configs/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i9100/full_i9100.mk)
